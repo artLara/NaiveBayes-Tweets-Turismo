@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>635</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CLASIFICADOR BAYESIANO INGENUO  DE TWEETS DE TURISMO</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Entrenamiento</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="1">
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>593</width>
+             <height>447</height>
+            </rect>
+           </property>
+           <widget class="QRadioButton" name="radioButtonEntrenamienotPrevio">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>9</y>
+              <width>174</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Entrenamiento previo</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButtonEntrenamientoNuevo">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>110</y>
+              <width>191</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Entrenammiento nuevo</string>
+            </property>
+           </widget>
+           <widget class="QPlainTextEdit" name="plainTextEditPrevio">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>38</y>
+              <width>471</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="plainText">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButtonEntrenamientoPrevio">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>40</y>
+              <width>89</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Browse</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>140</y>
+              <width>151</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Archivo para entrenar</string>
+            </property>
+           </widget>
+           <widget class="QPlainTextEdit" name="plainTextEditTrain">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>160</y>
+              <width>441</width>
+              <height>31</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButtonTrainFile">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>160</y>
+              <width>89</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Browse</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>200</y>
+              <width>111</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Archivo de test</string>
+            </property>
+           </widget>
+           <widget class="QPlainTextEdit" name="plainTextEditTest">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>230</y>
+              <width>441</width>
+              <height>31</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButtonTesFile">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>230</y>
+              <width>89</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Browse</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButtonEntrenar">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>280</y>
+              <width>89</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Entrenar</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>330</y>
+              <width>241</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Resultado del entrenamiento</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_resTrain">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>360</y>
+              <width>501</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Clasificar</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="1" column="0">
+         <widget class="QScrollArea" name="scrollArea_2">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>593</width>
+             <height>447</height>
+            </rect>
+           </property>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>131</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Tweet a clasificar</string>
+            </property>
+           </widget>
+           <widget class="QPlainTextEdit" name="plainTextEditTweet">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>70</y>
+              <width>561</width>
+              <height>101</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButtonClasificar">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>200</y>
+              <width>411</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Clasificar</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="labelResultado">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>260</y>
+              <width>521</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Clasificación: </string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
